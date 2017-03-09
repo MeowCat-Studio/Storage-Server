@@ -1,0 +1,131 @@
+﻿body{-moz-user-select:none;overflow-x:hidden;overflow-y:hidden;background:#000;font-family:Yahei mono,Verdana,fixedsys;overflow-x:hidden}
+div{left:0}
+#preloader{position: fixed;top:0;left:0;right:0;bottom:0;z-index:99;}
+#status {background-image:url(images/interface/Splash.png);background-repeat:no-repeat;background-position:center;}
+#DivTeach{
+position:absolute;width:505px;height:111px;top:170px;left:300;z-index:1000;text-align: center; font-size: 18px; font-weight: bold; color: #000; background-color: rgba(91, 67, 46, 0); font-family:微软雅黑}
+#dDave{z-index:1000}
+.WindowFrame{position:absolute;top:0;width:900px;left:50%;margin-left:-450px;height:600px;overflow:hidden}
+
+#imgShovel{z-index:2000}
+#dFlagMeter{visibility:hidden;position:absolute;z-index:255;left:50%;margin-left:-300px;top:0;height:45px}
+#dFlagMeterTitle{position:absolute;text-align:right}
+#sFlagMeterTitleF{position:absolute;color:#FCFDBB;font-size:25px;font-weight:bold;width:250px;top:-502px;left:120px;font-family:微软雅黑}
+#dFlagMeterTitleB{position:absolute;color:#000;font-size:25px;font-weight:bold;width:250px;height:21px;top:-500px;left:118px;font-family:微软雅黑}
+#dFlagMeterContent{position:absolute;left:200px;top:-550px}
+#dFlagMeterContent .flag{top:14px;visibility:hidden}
+#imgFlagMeterFull{top:17px;clip:rect(0,auto,auto,157px)}
+#imgFlagMeterEmpty{top:17px}
+#imgFlag1{left:10px}
+#imgFlag2{left:40px}
+#imgFlag3{left:70px}
+#imgFlag4{left:100px}
+#imgFlagHead{left:139px;top:13px}
+
+#dFlagMeter1{visibility:hidden;position:absolute;z-index:255;left:50%;margin-left:-340px;top:0;height:45px}
+#dFlagMeterTitle1{position:absolute;text-align:right}
+#sFlagMeterTitleF1{position:absolute;color:#F93;font-size:18px;font-weight:bold;width:250px;top:19px;left:88px;font-family:微软雅黑}
+#dFlagMeterContent1{position:absolute;left:444px;width:157px;height:40px}
+#dFlagMeterContent1 .flag{top:14px;visibility:hidden}
+#imgFlagMeterFull1{top:17px;clip:rect(0,auto,auto,157px)}
+#imgFlagMeterEmpty1{top:17px}
+#imgFlag11{left:10px}
+#imgFlag21{left:40px}
+#imgFlag31{left:70px}
+#imgFlag41{left:100px}
+#imgFlagHead1{left:139px;top:13px}
+
+#dSurface{display:none;z-index:255}
+#dAdventure{position:absolute;left:570px;top:262px;width:163px;height:163px;cursor:pointer}
+#dAdventure2{position:absolute;left:487px;top:121px;width:87px;height:93px;cursor:pointer}
+#dAdventure3{position:absolute;left:350px;top:373px;width:237px;height:227px;cursor:pointer}
+#dAdventure4{position:absolute;left:644px;top:400px;width:254px;height:200px;cursor:pointer}
+#dAdventure5{position:absolute;left:0px;top:245px;width:174px;height:354px;cursor:pointer}
+#dAdventure6{position:absolute;left:184px;top:360px;width:158px;height:194px;cursor:pointer}
+#dAdventure7{position:absolute;left:0px;top:0px;width:335px;height:245px;cursor:pointer}
+
+.BigLevel{float:left;color:#FC6;font-size:18px;width:100%;height:35px}
+#dSurfaceBack{position:absolute;top:0;width:0;height:0;z-index:255}
+#dOptionsMenuBack{position:absolute;text-align:center;left:244px;top:60px;width:412px;height:483px;display:none;background:url(images/interface/OptionsMenuback32.png) no-repeat;}
+
+#imgSF{position:absolute;cursor:pointer;z-index:256}
+#imgKK{position:absolute;z-index:256}
+#imgSpare{position:absolute;cursor:pointer;z-index:255}
+#imgSpareKK{position:absolute;z-index:255}
+
+#dTitle{visibility:hidden;position:absolute;background-color:#FFD;width:180px;font-size:12px;text-align:center;line-height:1.5;border:1px solid #000;padding:3px;z-index:254}
+#dAll{background:url('images/interface/loading.gif') 750px 0 no-repeat,url('images/interface/load.jpg') 0 0 no-repeat;}
+#dFlagMeter img,#dAll img{position:absolute;border-style:none}
+#dPZ{position:absolute}
+#tGround{position:absolute;width:1400px;height:600px;visibility:hidden;z-index:0}
+#dCardList{visibility:hidden;position:absolute;left:500px;top:0px;width:100px;overflow:visible;z-index:254}
+#dCardList div{position:relative;cursor:pointer;padding:0;height:60px;overflow:hidden}
+#dZombie{position:absolute;width:335px;height:600px;left:1065px;top:0;z-index:1}
+#dSelectCard{visibility:hidden;position:absolute;left:600px;top:0;width:465px;height:600px;z-index:20;background: url('images/interface/SeedChooser_Background.png') no-repeat}
+#dSelectCard .title{text-align:center;line-height:35px;height:45px;width:100%;top:0}
+#dSelectCard .bTitle{width:100%;height:80px;line-height:80px;text-align:center;margin-top:40px}
+#dSelectCard .button{width: 112px; height: 45px; border-left: 1px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/reset.png")}
+#dSelectCard .button1{width: 112px; height: 45px; border-left: 1px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/start.png")}
+
+#dPCard{position:relative;width:96%;height:455px;padding-left:13px;_padding-left:10px}
+#dPCard .span1,#dHandBookPCard .span1{cursor:pointer;width:70px;height:42px;overflow:hidden;float:left;margin:0px 0 0 2px;position:relative}
+#dPCard img,#dHandBookPCard img{left:0;width:70px;height:84px}
+
+#dTop{position:absolute;left:1px;top:561px;height:35px;width:123px;visibility:hidden;z-index:1}
+#dSunNum{background:url('images/interface/SunBack.png') no-repeat;position:absolute;width:123px;height:48px}
+#sSunNum{text-align:center;position:absolute;top:10px;left:43px;width:68px;font-family:Verdana;font-weight:bold;font-size:18pt;color:#FFF}
+#tdShovel{position:absolute;width:71px;height:35px;left:130px;background: url('images/interface/ShovelBack.png') no-repeat;visibility:hidden}
+#dPlants,#dZombies{position:absolute;left:0;top:0;z-index:2}
+
+#dNewPlant{visibility:hidden;position:absolute;top:0;left:50%;margin-left:-450px;width:900px;height:600px;background:url(images/interface/AwardScreen_Back.png) no-repeat}
+#dNewPlant .card{position:absolute;top:100px;width:900px;height:191px;line-height:191px;text-align:center}
+#dNewPlantTitle{position:absolute;left:50%;text-align:center;margin-left:-250px;color: #FC6; font-size: 20px;height:90px;line-height:90px; font-weight: bold; width:500px}
+#dNewPlantName{position:absolute;position:absolute;top:320px;text-align:center;left:50%;margin-left:-150px;width:300px;height:55px;font-family: 微软雅黑; font-size: 30px; color: #000000; font-weight: bold;line-height:55px}
+#btnNextLevel{position:absolute;left:400px;top:507px;width: 112px; height: 46px;cursor:pointer; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0);background:url(images/interface/调速_继续游戏.png) no-repeat}
+#dNewPlant .button_Close{width: 81px; height: 59px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/返回主页.png")}
+#dNewPlantTooltip{position:absolute;left:50%;top:400px;text-align:center;margin-left:-140px;width:280px;font-weight: bold;font-family: 微软雅黑; font-size: 15px;color:#232323}
+
+#dProcess .button{position:absolute;left:336px;top:490px;width:160px; height: 65px;cursor:pointer; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0);background:url() no-repeat}
+
+#dOptionsMenu{line-height:30px;position:absolute;width:100%;height:100%;display:none;font-weight:bold}
+#dOptionsMenu .button{cursor:pointer;color:#632F00;text-decoration:none;font-family:方正准圆简体;font-size:30}
+#dOptionsMenu .OMd0{margin-top:150px;height:60px;position:relative}
+#dOptionsMenu .OMd0 .OMd1{position:absolute;left:150px;text-align:left}
+#dOptionsMenu .OMd0 .OMd1 div{height:30px}
+#dOptionsMenu .OMd0 .OMd1 div label{color:#000}
+
+#dSpeedContainer{position:absolute;left:50%;padding:10px;margin-left:-350px;top:87px;width:640px;font-size:14px;height:323px;background:url("images/interface/调速面板.png");color:#FFF;text-align:center;display:none;z-index:255}
+#dSpeedContainer .title{position:relative;height:25px;width:538px;line-height:25px;font-weight:bold;color:#FF0}
+#dSpeedContainer .nowspeed{height:50px;line-height:50px;font-weight:bold;color:#FF0}
+#dSpeedContainer .content{text-align:left;line-height:30px}
+#dSpeedContainer .content span{font-weight:700;color:#FF0}
+
+.dSpeed{position:relative;margin-top:20px;height:50px;width:100%}
+.dSpeed div{cursor:pointer}
+.dSpeed .dS1{float:left;width:40%;line-height:50px;opacity:0;}
+.dSpeed .dS2 div{float:left;opacity:0;}
+#dMenu{visibility:hidden;position:absolute;top:0;left:50%;margin-left:320px;cursor:pointer;width:226px;height:0px;z-index:254}
+.Menu{float:left;text-align:center;line-height:0px;height:41px;width:113px}
+#dSpeedContainer .button{width: 112px; height: 45px; border-left: 0px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;z-index:259;background:url("images/interface/调速_继续游戏.png")}
+#dSpeedContainer .button1{width: 112px; height: 45px; border-left: 0px solid rgba(225, 219, 223, 0); border-right: 3px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/调速_恢复原速.png")}
+#dMenu .button{width: 112px; height: 46px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/暂停.png")}
+#dMenu .button1{width: 112px; height: 46px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 0px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/菜单.png")}
+#dOptionsMenu .OptionsMenuButton{width: 252px; height: 94px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer}
+.OptionsMenuButton{background-position:0 0}
+
+#Diary{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(images/interface/日记书桌.jpg) no-repeat}
+#Diary .button_Close{width: 81px; height: 59px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/返回主页.png")}
+
+#About{visibility:hidden;position:absolute;z-index:255;width:900px;background:url(images/interface/日记书桌.jpg) no-repeat}
+#About .button_Close{width: 81px; height: 59px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/返回主页.png")}
+
+#AcrossWorldUi{visibility:hidden;position:absolute;z-index:257;width:900px;background:url(images/interface/跳页面板.jpg) no-repeat}
+#AcrossWorldUi .button_Close1{width: 81px; height: 59px; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0); background-color: rgba(225, 219, 223, 0);font-weight:bold; font-size:14px;cursor:pointer;background:url("images/interface/返回主页.png")}
+#AcrossWorldUi .button_Close{position:absolute;left:785px;top:540px;width: 112px; height: 46px;cursor:pointer; border-left: .1px solid rgba(225, 219, 223, 0); border-right: 1px solid rgba(225, 219, 223, 0); border-top: 3px solid rgba(225, 219, 223, 0); border-bottom: 3px solid rgba(225, 219, 223, 0);background:url("images/interface/调速_继续游戏.png") no-repeat}
+#AcrossWorldUi .adventure0{position:absolute;left:104px;top:30.55px;width:230px;height:166px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure1{position:absolute;left:166.85px;top:211.5px;width:182.3px;height:151.15px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure2{position:absolute;left:357.75px;top:106.4px;width:176px;height:141px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure3{position:absolute;left:472px;top:270px;width:134px;height:127px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure4{position:absolute;left:612px;top:174px;width:190px;height:127px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure5{position:absolute;left:566px;top:402px;width:190px;height:127px;cursor:pointer;z-index:258}
+#AcrossWorldUi .adventure6{position:absolute;left:246px;top:378px;width:169px;height:139px;cursor:pointer;z-index:258}

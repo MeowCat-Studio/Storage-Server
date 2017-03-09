@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>美食大战老鼠 - 小喵工作室 - MeowCat Studio</title>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="UI.css">
+</head>
+<body>
+   <div id="preloader">
+	    <div id="status" class="WindowFrame"></div>
+    </div>
+	    
+    <script src="js/Function.js"></script>
+<script src="js/Intro.js"></script>
+    <div id="dFlagMeter">
+	    <div id="dFlagMeterTitle">
+                    <div id="dFlagMeterTitleB"></div>
+                    <div id="sFlagMeterTitleF"></div></div>
+	    <div id="dFlagMeterContent">
+		<img id="imgFlagMeterEmpty" src="images/interface/FlagMeterEmpty.png">
+		<img id="imgFlagMeterFull" src="images/interface/FlagMeterFull.png">
+		<img id="imgFlagHead" src="images/interface/FlagMeterParts1.png">
+	    </div>
+    </div>
+    <div id="dSurface" class="WindowFrame">
+	    <div id="iSurfaceBackground">
+		<img src="images/interface/Surface.png" usemap="#FPMap0" border="0">
+		<div class="Adventure" id="dAdventure" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('Test');PlayAudio('pause');"></div>
+		<!--<div class="ShowOptions" id="dAdventure2" onmouseover="this.style.backgroundPosition='bottom'" onmouseout="this.style.backgroundPosition='top'" onclick="ShowOptions()"></div>
+		<div class="ViewDiary" id="dAdventure3" onmouseover="this.style.backgroundPosition='bottom'" onmouseout="this.style.backgroundPosition='top'" onclick="ViewAbout()"></div>
+		<div class="AcrossWorldUi" id="dAdventure4" onmouseover="this.style.backgroundPosition='bottom'" onmouseout="this.style.backgroundPosition='top'" onclick="AcrossWorldUi()"></div>
+		<div class="Sunflower_trophy" id="dAdventure5" onmouseover="this.style.backgroundPosition='bottom'" onmouseout="this.style.backgroundPosition='top'" onclick="ViewAbout()"></div>
+		<div class="lab" id="dAdventure6" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('lab');PlayAudio('pause');"></div>
+		<div class="jiangnangame" id="dAdventure7" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="window.open('http://www.meowcat.tk/');PlayAudio('pause');"></div>-->
+	    </div>
+	    <div id="dSurfaceBack">
+		    <div id="dOptionsMenuback">
+			    <div id="dOptionsMenu">
+				    <div class="OMd0">
+					    <div class="OMd1">
+						<div><input type="checkbox" id="cAutoSun" value="1" onchange="CheckAutoSun(this)"> <label for="cAutoSun" id="lAutoSun">自动拾取火苗</label></div>
+						<div><input type="checkbox" id="cSilence" value="1"> <label for="cSilence" id="lSilence">关闭音乐音效</label></div>
+					    </div>
+				    </div>
+				    <div class="BigLevel button" onclick="ShowSpeed()">游戏调速</div>
+				    <div class="BigLevel button" onclick="SelectModal(oS.Lvl);StopAudio('Boss');PlayAudio('bottom');CSpeed(1,10,1)">重新开始</div>
+				    <div class="BigLevel button" onclick="SelectModal('0');StopAudio('Boss');PlayAudio('bottom')">返回首页</div>
+                                                                    <input class="OptionsMenuButton" onclick="HiddenOptions();CheckAutoSun($('cAutoSun'));CheckSilence($('cSilence'));" type="button" id="btnReset" style="margin-top:35px;margin-left:25px;z-index:1070">
+			                    </div>
+		    </div>
+    </div>
+    </div>
+    <div id="AcrossWorldUi" class="WindowFrame">
+                    <input class="button_Close1" type="button" onclick="SelectModal(Test);SetBlock($('dSurface'),$('iSurfaceBackground'));SetHidden($('AcrossWorldUi'))">
+	    <input class="button_Close" onclick="CloseAcrossWorld()" type="button" id="btnReset">
+	    <div class="adventure0" id="adventure0" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('新手教学1');PlayAudio('bottom');SetHidden($('AcrossWorldUi'));"></div>
+	    <div class="adventure1" id="adventure1" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('森林选关1');PlayAudio('bottom');SetHidden($('AcrossWorldUi'));"></div>
+	    <div class="adventure2" id="adventure2" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('沼泽选关1');PlayAudio('bottom');SetHidden($('AcrossWorldUi'));"></div>
+	    <div class="adventure3" id="adventure3" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="PlayAudio('UnlockLimit');"></div>
+	    <div class="adventure4" id="adventure4" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="PlayAudio('UnlockLimit');"></div>
+	    <div class="adventure5" id="adventure5" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="PlayAudio('UnlockLimit');"></div>
+	    <div class="adventure6" id="adventure6" onmouseover="this.style.backgroundPosition='bottom';" onmouseout="this.style.backgroundPosition='top'" onclick="SelectModal('lab');PlayAudio('bottom');SetHidden($('AcrossWorldUi'));"></div>
+    </div>
+    <div id="Diary" class="WindowFrame">	    
+                    <input class="button_Close" type="button" onclick="CloseDiary()">
+                    <tr>
+                        <td><iframe src="js/Diary/Diary.shtml" frameBorder="0" width="900" scrolling="no" height="610" left="0" text-align:center></iframe></td>
+                    </tr>
+                    </table>    
+    </div>
+	<div id="About" class="WindowFrame">	    
+                    <input class="button_Close" type="button" onclick="CloseAbout()">
+                    <tr>
+                        <td><iframe src="js/About/about.html" frameBorder="0" width="900" scrolling="no" height="610" left="0" text-align:center></iframe></td>
+                    </tr>
+                    </table>    
+    </div>
+    <div class="WindowFrame" id="dAll">
+	<div id="tGround"></div>
+	<div id="dCardList"></div>
+	<div id="dZombie"></div>
+	<div id="dSelectCard">
+		<div class="title"></div>
+		<div id="dPCard"></div>
+		<div class="bTitle">
+			<input class="button" onclick="ResetSelectCard()" type="button" name="btnReset" id="btnReset">
+			<input class="button1" onclick="oS.ScrollBack(LetsGO)" type="button" disabled="disabled" name="btnOK" id="btnOK">
+		</div>
+	</div>
+	<div id="dTop">
+		<div id="dSunNum">
+			<span id="sSunNum"></span>
+		</div>
+		<div id="tdShovel">
+			<img id="imgShovel" src="images/interface/Shovel.png" onmousedown="ChoseShovel(event)">
+		</div>
+	</div>
+	<div id="dPZ"></div>
+    </div>
+    <div id="dMenu">
+                <!--<input class="button" onclick="ShowSpeed()" type="button" id="dMenu0">
+                <input class="button1" onclick="ClickMenu()" type="button" id="dMenu1">-->
+    </div>
+    <div id="dNewPlant">
+	<div class="card">
+		<img id="iNewPlantCard" border="0">
+	</div>
+	<div id="dNewPlantName"></div>
+	<div id="dNewPlantTooltip"></div>
+	<input type="button" id="btnNextLevel">
+                <input class="button_Close" type="button" onclick="CloseNewPlant();">
+    </div>
+    <div id="dProcess">
+	<input class="button" type="button" value="" onclick="SetHidden($('dProcess'));PlayAudio('Close')">
+    </div>
+    <div id="dSpeedContainer">
+	<div class="dSpeed">
+		<div class="dS1">23333</div>
+		<div class="dS2"><div onclick="CSpeed(2,10,2)">2<br><br>____</div><div onclick="CSpeed(3,10,3)">3<br><br>____</div><div onclick="CSpeed(5,10,5)">5<br><br>____</div><div onclick="CSpeed(5,5,10)">10<br><br>____</div></div>
+	</div>
+	<div class="nowspeed"></div>
+	                                <input class="button" onclick="HiddenSpeed()" type="button" id="btnReset">
+	                                <input class="button1" onclick="CSpeed(1,10,1)" type="button" id="btnReset">
+    </div>
+    <script>
+    $User.Client.PC&&$User.HTTP?( 
+	    (oS.AutoSun=Math.floor(getCookie('JSPVZAutoSun')))&&($('cAutoSun').checked=true),
+	    (oS.Silence=Math.floor(getCookie('JSPVZSilence')))&&($('cSilence').checked=true)
+    ):(	    oS.AutoSun=1,$('cAutoSun').checked=true,
+	    oS.Silence=0,$('cSilence').checked=false);
+    InitGame();
+    </script>
+    <script  src="js/Plants.js"></script>
+    <script  src="js/Zombie.js"></script>
+    <body id="dBody" topmargin="0" leftmargin="0" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+</body>
+</html>
