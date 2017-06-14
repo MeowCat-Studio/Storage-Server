@@ -4,17 +4,17 @@ mode con cols=100
 goto onCreate
 :onCreate
 cls
-title ç˜Ÿç–«å…¬å¸åœºæ™¯åŠ©æ‰‹ - å°å–µå·¥ä½œå®¤ - MeowCat Studio
+title ÎÁÒß¹«Ë¾³¡¾°ÖúÊÖ - Ð¡ß÷¹¤×÷ÊÒ - MeowCat Studio
 if ""%1""=="""" (set errorcode=0x08 & set errormessage=Not have a base directory & goto onError)
 goto 1
 :1
 cls
-title ç˜Ÿç–«å…¬å¸åœºæ™¯åŠ©æ‰‹ - å°å–µå·¥ä½œå®¤ - MeowCat Studio
+title ÎÁÒß¹«Ë¾³¡¾°ÖúÊÖ - Ð¡ß÷¹¤×÷ÊÒ - MeowCat Studio
 echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
-echo å½“å‰æ‹¥æœ‰çš„åœºæ™¯(ç¬¬1é¡µ/å…±1é¡µ):
-echo 1.å¸è¡€é¬¼å¼‚å˜
+echo µ±Ç°ÓµÓÐµÄ³¡¾°(µÚ1Ò³/¹²1Ò³):
+echo 1.ÎüÑª¹íÒì±ä
 echo 2.Test
 echo 3.Test
 echo 4.Test
@@ -24,8 +24,8 @@ echo 7.Test
 echo 8.Test
 echo 9.Test
 echo 10.Test
-echo è¾“å…¥0æ¥è¿”å›žåœºæ™¯åŠ©æ‰‹ï¼Œè¾“å…¥page+é¡µç å¯ä»¥åˆ‡æ¢é¡µé¢
-set /p scselect=è¯·é”®å…¥åºå·å¹¶æŒ‰å›žè½¦é”®(ENTER)ç¡®è®¤:
+echo ÊäÈë0À´·µ»Ø³¡¾°ÖúÊÖ£¬ÊäÈëpage+Ò³Âë¿ÉÒÔÇÐ»»Ò³Ãæ
+set /p scselect=Çë¼üÈëÐòºÅ²¢°´»Ø³µ¼ü(ENTER)È·ÈÏ:
 echo.
 if /i "%scselect%"=="0" (goto onEnd)
 if /i "%scselect%"=="1" (goto 11)
@@ -39,44 +39,44 @@ if /i "%scselect%"=="8" (goto 18)
 if /i "%scselect%"=="9" (goto 19)
 if /i "%scselect%"=="10" (goto 110)
 set scselect=
-echo æ‚¨è¾“å…¥çš„åºå·æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚
+echo ÄúÊäÈëµÄÐòºÅÓÐÎó£¬ÇëÖØÐÂÊäÈë¡£
 echo.
 pause
 goto 1
 :11
 set page=1
-set scname=å¸è¡€é¬¼å¼‚å˜
-set scinfo=çŽ°ä»£çš„äººç±»ç¤¾ä¼šï¼Œè¡€æ—å¹´å¹¼æœ«è£”ã€‚ç„¶è€Œåœ¨è¿™ä¸ªä¸–ç•Œï¼Œæ²¡æœ‰å¦–æ€ªçš„ä¹å›­ã€‚è•¾ç±³èŽ‰äºšï¼Œæ–¯å¡é›·ç‰¹ï¼ˆRemiliaÂ·Scarletï¼‰ï¼Œä¸ºäº†é‡æŒ¯æ–¯å¡é›·ç‰¹å®¶æ—çš„è£å…‰ï¼Œä¸å¾—ä¸ä¾é è‡ªå·±çš„åŠ›é‡ï¼Œä¸Žæ•´ä¸ªäººç±»ç¤¾ä¼šå¯¹æŠ—ã€‚è™½ç„¶ä¾æ—§æ— æ³•å¢žåŠ è¡€æ—çš„æ•°é‡ï¼Œä½†æ˜¯è•¾ç±³èŽ‰äºšæ‹¥æœ‰æ¶é­”çš„ç‹¬ç‰¹åŠ›é‡â€”â€”èƒ½å¤Ÿä»¥ç˜Ÿç–«å½¢å¼ä¼ æ’­çš„çº¢é­”å°è®°ï¼Œä»¥åŠæ‹¥æœ‰éžå‡¡åŠ›é‡çš„ç¬¦å¡ï¼ˆSpellCardï¼‰ã€‚å¦ä¸€æ–¹é¢ï¼Œå¦ä¸€ä¸ªä¸–ç•Œä¸­çš„å®¿æ•Œï¼Œä¹Ÿå°†é˜»æŒ¡è¡€æ—çš„å‰è¿›ä¹‹è·¯ã€‚ å¸è¡€é¬¼èƒ½å¦å‡»æºƒäººç±»æ–‡æ˜Žï¼Œç»Ÿæ²»ä¸–ç•Œå‘¢ï¼Ÿ
+set scname=ÎüÑª¹íÒì±ä
+set scinfo=ÏÖ´úµÄÈËÀàÉç»á£¬Ñª×åÄêÓ×Ä©Òá¡£È»¶øÔÚÕâ¸öÊÀ½ç£¬Ã»ÓÐÑý¹ÖµÄÀÖÔ°¡£ÀÙÃ×ÀòÑÇ£¬Ë¹¿¨À×ÌØ£¨Remilia¡¤Scarlet£©£¬ÎªÁËÖØÕñË¹¿¨À×ÌØ¼Ò×åµÄÈÙ¹â£¬²»µÃ²»ÒÀ¿¿×Ô¼ºµÄÁ¦Á¿£¬ÓëÕû¸öÈËÀàÉç»á¶Ô¿¹¡£ËäÈ»ÒÀ¾ÉÎÞ·¨Ôö¼ÓÑª×åµÄÊýÁ¿£¬µ«ÊÇÀÙÃ×ÀòÑÇÓµÓÐ¶ñÄ§µÄ¶ÀÌØÁ¦Á¿¡ª¡ªÄÜ¹»ÒÔÎÁÒßÐÎÊ½´«²¥µÄºìÄ§Ó¡¼Ç£¬ÒÔ¼°ÓµÓÐ·Ç·²Á¦Á¿µÄ·û¿¨£¨SpellCard£©¡£ÁíÒ»·½Ãæ£¬ÁíÒ»¸öÊÀ½çÖÐµÄËÞµÐ£¬Ò²½«×èµ²Ñª×åµÄÇ°½øÖ®Â·¡£ ÎüÑª¹íÄÜ·ñ»÷À£ÈËÀàÎÄÃ÷£¬Í³ÖÎÊÀ½çÄØ£¿
 set scdata=1.54M
-set scmaker=å¥•åŒ—13537ï¼ˆæ¥è‡ªç™¾åº¦è´´å§ï¼‰
+set scmaker=ÞÈ±±13537£¨À´×Ô°Ù¶ÈÌù°É£©
 set scfilename=scarlet.plagueinc
 set scid=scarlet
 goto onReadInfo
 :onReadInfo
 cls
-title ç˜Ÿç–«å…¬å¸åœºæ™¯åŠ©æ‰‹ - å°å–µå·¥ä½œå®¤ - MeowCat Studio
+title ÎÁÒß¹«Ë¾³¡¾°ÖúÊÖ - Ð¡ß÷¹¤×÷ÊÒ - MeowCat Studio
 echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
-echo åœºæ™¯åï¼š%scname%
-echo åœºæ™¯è¯´æ˜Žï¼š%scinfo%
-echo åœºæ™¯å¤§å°ï¼š%scdata%
-echo ä½œè€…ï¼š%scmaker%
-set /p downloadconfirm=è¾“å…¥1å¼€å§‹ä¸‹è½½ï¼Œè¾“å…¥0è¿”å›žä¸»èœå•(æŒ‰å›žè½¦ENTERç¡®è®¤):
+echo ³¡¾°Ãû£º%scname%
+echo ³¡¾°ËµÃ÷£º%scinfo%
+echo ³¡¾°´óÐ¡£º%scdata%
+echo ×÷Õß£º%scmaker%
+set /p downloadconfirm=ÊäÈë1¿ªÊ¼ÏÂÔØ£¬ÊäÈë0·µ»ØÖ÷²Ëµ¥(°´»Ø³µENTERÈ·ÈÏ):
 if /i "%downloadconfirm%"=="1" (goto onDownload)
 if /i "%downloadconfirm%"=="0" (goto %page%)
 set downloadconfirm=
 goto onReadInfo
 :onDownload
 cls
-title ç˜Ÿç–«å…¬å¸åœºæ™¯åŠ©æ‰‹ - å°å–µå·¥ä½œå®¤ - MeowCat Studio
+title ÎÁÒß¹«Ë¾³¡¾°ÖúÊÖ - Ð¡ß÷¹¤×÷ÊÒ - MeowCat Studio
 echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
-echo æ­£åœ¨è¿žæŽ¥æœåŠ¡å™¨...è¯·ç¨åŽ...
+echo ÕýÔÚÁ¬½Ó·þÎñÆ÷...ÇëÉÔºó...
 ping>nul 127.0.0.1
 %1\wget.dll -O %scfilename% http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename% >nul 2>nul
-for %%i in ("%scfilename%") do (if "%%~zi"=="0" (echo ç½‘ç»œæœªè¿žæŽ¥æˆ–è¿žæŽ¥åˆ°æœåŠ¡å™¨å¤±è´¥ï¼Œè¯·ç¨åŽå†è¯•. & echo è¯·æŒ‰ä»»æ„é”®è¿”å›ž & pause>nul & del /f /q "%scfilename%" & goto onCreate))
+for %%i in ("%scfilename%") do (if "%%~zi"=="0" (echo ÍøÂçÎ´Á¬½Ó»òÁ¬½Óµ½·þÎñÆ÷Ê§°Ü£¬ÇëÉÔºóÔÙÊÔ. & echo Çë°´ÈÎÒâ¼ü·µ»Ø & pause>nul & del /f /q "%scfilename%" & goto onCreate))
 start "" "%1\SCHelper.exe "%temp%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" "%scid%""
 del /f /q "serverlist.cmd"
 exit
@@ -86,21 +86,21 @@ del /f /q "serverlist.cmd"
 exit
 :onError
 cls
-title ç˜Ÿç–«å…¬å¸åœºæ™¯åŠ©æ‰‹ - å°å–µå·¥ä½œå®¤ - MeowCat Studio
+title ÎÁÒß¹«Ë¾³¡¾°ÖúÊÖ - Ð¡ß÷¹¤×÷ÊÒ - MeowCat Studio
 echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo Fatal Error.
-echo Oops.ç¨‹åºå‡ºçŽ°é”™è¯¯ï¼Œå³å°†é€€å‡ºã€‚
+echo Oops.³ÌÐò³öÏÖ´íÎó£¬¼´½«ÍË³ö¡£
 echo Code:%errorcode%.
 echo %errormessage%.
-echo è¯·æŒ‰ä»»æ„é”®ç»§ç»­.
+echo Çë°´ÈÎÒâ¼ü¼ÌÐø.
 pause>nul
 goto onDestroy
 :onDestroy
 cls
 rmdir>nul /S /Q "%temp%\MeowCat Studio\Scenario Helper\temp" 2>nul
-echo msgbox "æœ¬åº”ç”¨ä½¿ç”¨å°å–µåº”ç”¨æ¡†æž¶åˆ›å»ºï¼ å¦‚éœ€ä¸‹è½½è¯·è®¿é—®â€˜å°å–µå·¥ä½œå®¤â€™ç™¾åº¦è´´å§",vbOKOnly,"å°å–µå·¥ä½œå®¤" >msg.vbs
+echo msgbox "±¾Ó¦ÓÃÊ¹ÓÃÐ¡ß÷Ó¦ÓÃ¿ò¼Ü´´½¨£¡ ÈçÐèÏÂÔØÇë·ÃÎÊ¡®Ð¡ß÷¹¤×÷ÊÒ¡¯°Ù¶ÈÌù°É",vbOKOnly,"Ð¡ß÷¹¤×÷ÊÒ" >msg.vbs
 call msg.vbs
 del /f /q msg.vbs
 exit
