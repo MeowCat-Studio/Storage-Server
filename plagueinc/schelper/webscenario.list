@@ -73,9 +73,9 @@ echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 正在连接服务器...请稍后...
-%1\curl.dll http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename%>"%temp%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%"
-for %%i in ("%temp%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%") do (if "%%~zi"=="0" (echo 网络未连接或连接到服务器失败，请稍后再试. & echo 请按任意键返回 & pause>nul & del /f /q "%temp%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" & goto onCreate))
-start "" SCHelper.exe "%temp%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" "%scid%"
+%1\curl.dll http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename%>"%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%"
+for %%i in ("%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%") do (if "%%~zi"=="0" (echo 网络未连接或连接到服务器失败，请稍后再试. & echo 请按任意键返回 & pause>nul & del /f /q "%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" & goto onCreate))
+start "" SCHelper.exe "%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" "%scid%"
 del /f /q "serverlist.cmd"
 exit
 :onEnd
@@ -97,7 +97,7 @@ pause>nul
 goto onDestroy
 :onDestroy
 cls
-rmdir>nul /S /Q "%temp%\MeowCat Studio\Scenario Helper\temp" 2>nul
+rmdir>nul /S /Q "%temp%\MeowCatStudio\ScenarioHelper\temp" 2>nul
 echo msgbox "本应用使用小喵应用框架创建！ 如需下载请访问‘小喵工作室’百度贴吧",vbOKOnly,"小喵工作室" >msg.vbs
 call msg.vbs
 del /f /q msg.vbs
