@@ -10,12 +10,12 @@ goto 1
 :1
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 当前拥有的场景(第1页/共1页):
 echo 1.吸血鬼异变
-echo 2.Test
+echo 2.莱姆病
 echo 3.Test
 echo 4.Test
 echo 5.Test
@@ -38,6 +38,7 @@ if /i "%scselect%"=="7" (goto 17)
 if /i "%scselect%"=="8" (goto 18)
 if /i "%scselect%"=="9" (goto 19)
 if /i "%scselect%"=="10" (goto 110)
+if /i "%scselect%"=="page1" (goto 1)
 set scselect=
 echo 您输入的序号有误，请重新输入。
 echo.
@@ -47,30 +48,42 @@ goto 1
 set page=1
 set scname=吸血鬼异变
 set scinfo=现代的人类社会，血族年幼末裔。然而在这个世界，没有妖怪的乐园。蕾米莉亚，斯卡雷特（Remilia·Scarlet），为了重振斯卡雷特家族的荣光，不得不依靠自己的力量，与整个人类社会对抗。虽然依旧无法增加血族的数量，但是蕾米莉亚拥有恶魔的独特力量——能够以瘟疫形式传播的红魔印记，以及拥有非凡力量的符卡（SpellCard）。另一方面，另一个世界中的宿敌，也将阻挡血族的前进之路。 吸血鬼能否击溃人类文明，统治世界呢？
-set scdata=1.54M
+set scdata=1.54MB
 set scmaker=奕北13537（来自百度贴吧）
 set scfilename=scarlet.plagueinc
 set scid=scarlet
+set sclink=http://tieba.baidu.com/p/5139021622
+goto onReadInfo
+:12
+set page=1
+set scname=莱姆病
+set scinfo=时至2019年，世界木材出现严重短缺。新上任的加拿大总理不顾民间环境保护组织的反对，一意孤行地推动了开发本国境内原始森林并进行采伐用于出口的计划。在蜱虫开始活动的季春，温尼伯湖附近森林中的一位林业工人不慎被蜱虫叮咬，两周后被叮咬处出现了日晕般的红疹。这次平淡无奇的感染的罪魁祸首，或许将在人类历史的车轮上留下刻痕。
+set scdata=366.8KB
+set scmaker=huangziye812（来自百度贴吧）
+set scfilename=LymeDisease.plagueinc
+set scid=LymeDisease
+set sclink=http://tieba.baidu.com/p/5165497982
 goto onReadInfo
 :onReadInfo
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 场景名：%scname%
 echo 场景说明：%scinfo%
 echo 场景大小：%scdata%
 echo 作者：%scmaker%
-set /p downloadconfirm=输入1开始下载，输入0返回主菜单(按回车ENTER确认):
+set /p downloadconfirm=输入1开始下载，输入2打开原帖链接，输入0返回主菜单(按回车ENTER确认):
 if /i "%downloadconfirm%"=="1" (goto onDownload)
 if /i "%downloadconfirm%"=="0" (goto %page%)
+if /i "%downloadconfirm%"=="2" (start %sclink%)
 set downloadconfirm=
 goto onReadInfo
 :onDownload
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 正在连接服务器...请稍后...
@@ -83,24 +96,4 @@ exit
 :onEnd
 start "" "SCHelper.exe"
 del /f /q "serverlist.cmd"
-exit
-:onError
-cls
-title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.3.1 [Code:15]
-echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
-echo ----------------------------------------------------------------------------------------------------
-echo Fatal Error.
-echo Oops.程序出现错误，即将退出。
-echo Code:%errorcode%.
-echo %errormessage%.
-echo 请按任意键继续.
-pause>nul
-goto onDestroy
-:onDestroy
-cls
-rmdir>nul /S /Q "%temp%\MeowCatStudio\ScenarioHelper\temp" 2>nul
-echo msgbox "本应用使用小喵应用框架创建！ 如需下载请访问‘小喵工作室’百度贴吧",vbOKOnly,"小喵工作室" >msg.vbs
-call msg.vbs
-del /f /q msg.vbs
 exit
