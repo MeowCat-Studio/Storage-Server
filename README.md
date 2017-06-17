@@ -1,2 +1,3 @@
 # MeowCat-CDN
-MeowCat Studio CDN
+MeowCat Studio Files Storage
+http://cdn.meowcat.tk/
