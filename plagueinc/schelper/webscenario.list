@@ -16,7 +16,7 @@ echo ---------------------------------------------------------------------------
 echo 当前拥有的场景(第1页/共1页):
 echo 1.吸血鬼异变
 echo 2.莱姆病
-echo 3.Test
+echo 3.H7N9
 echo 4.Test
 echo 5.Test
 echo 6.Test
@@ -63,6 +63,17 @@ set scmaker=huangziye812（来自百度贴吧）
 set scfilename=LymeDisease.plagueinc
 set scid=LymeDisease
 set sclink=http://tieba.baidu.com/p/5165497982
+goto onReadInfo
+:13
+set page=1
+set scname=H7N9
+set scinfo=我自己做的简单模式都过不了（笑
+由于目前还处于1.0的开发阶段，所以有什么bug可以尽管说来QAQ “特型”：1.有一个几乎让解药无法研发的特型，但是消耗很大，而且不见得你就能到加勒比海和格林兰岛... 2.由于是H7N9的变种，疫苗已经有所研发了。 3.目前事件只有上面的一种，初始效果和原版场景几乎一致，但是自己也瞎yy了一些特性。。。
+set scdata=64.14KB
+set scmaker=蓝色的黑钻（来自百度贴吧）
+set scfilename=H7N9.plagueinc
+set scid=H7N9
+set sclink=http://tieba.baidu.com/p/5259552975
 goto onReadInfo
 :onReadInfo
 cls
