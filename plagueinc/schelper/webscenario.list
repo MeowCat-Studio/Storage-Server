@@ -3,7 +3,7 @@ color F3
 mode con cols=100
 goto onCreate
 :onCreate
-md>nul "%temp%\MeowCatStudio\ScenarioHelper\temp\weblist"
+md>nul "%appdata%\MeowCat Studio\Scenario Helper\temp\weblist"
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
 goto 1
@@ -17,13 +17,13 @@ echo 当前拥有的场景(第1页/共1页):
 echo 1.吸血鬼异变
 echo 2.莱姆病
 echo 3.H7N9
-echo 4.Test
-echo 5.Test
-echo 6.Test
-echo 7.Test
-echo 8.Test
-echo 9.Test
-echo 10.Test
+rem echo 4.Test
+rem echo 5.Test
+rem echo 6.Test
+rem echo 7.Test
+rem echo 8.Test
+rem echo 9.Test
+rem echo 10.Test
 echo 输入0来返回场景助手，输入page+页码可以切换页面
 set /p scselect=请键入序号并按回车键(ENTER)确认:
 echo.
@@ -31,13 +31,13 @@ if /i "%scselect%"=="0" (goto onEnd)
 if /i "%scselect%"=="1" (goto 11)
 if /i "%scselect%"=="2" (goto 12)
 if /i "%scselect%"=="3" (goto 13)
-if /i "%scselect%"=="4" (goto 14)
-if /i "%scselect%"=="5" (goto 15)
-if /i "%scselect%"=="6" (goto 16)
-if /i "%scselect%"=="7" (goto 17)
-if /i "%scselect%"=="8" (goto 18)
-if /i "%scselect%"=="9" (goto 19)
-if /i "%scselect%"=="10" (goto 110)
+rem if /i "%scselect%"=="4" (goto 14)
+rem if /i "%scselect%"=="5" (goto 15)
+rem if /i "%scselect%"=="6" (goto 16)
+rem if /i "%scselect%"=="7" (goto 17)
+rem if /i "%scselect%"=="8" (goto 18)
+rem if /i "%scselect%"=="9" (goto 19)
+rem if /i "%scselect%"=="10" (goto 110)
 if /i "%scselect%"=="page1" (goto 1)
 set scselect=
 echo 您输入的序号有误，请重新输入。
@@ -67,8 +67,7 @@ goto onReadInfo
 :13
 set page=1
 set scname=H7N9
-set scinfo=我自己做的简单模式都过不了（笑
-由于目前还处于1.0的开发阶段，所以有什么bug可以尽管说来QAQ “特型”：1.有一个几乎让解药无法研发的特型，但是消耗很大，而且不见得你就能到加勒比海和格林兰岛... 2.由于是H7N9的变种，疫苗已经有所研发了。 3.目前事件只有上面的一种，初始效果和原版场景几乎一致，但是自己也瞎yy了一些特性。。。
+set scinfo=我自己做的简单模式都过不了...由于目前还处于1.0的开发阶段，所以有什么bug可以尽管说来QAQ “特型”：1.有一个几乎让解药无法研发的特型，但是消耗很大，而且不见得你就能到加勒比海和格林兰岛... 2.由于是H7N9的变种，疫苗已经有所研发了。 3.目前事件只有上面的一种，初始效果和原版场景几乎一致，但是自己也瞎yy了一些特性。。。
 set scdata=64.14KB
 set scmaker=蓝色的黑钻（来自百度贴吧）
 set scfilename=H7N9.plagueinc
@@ -98,9 +97,9 @@ echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 正在连接服务器...请稍后...
-curl.dll http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename%>"%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%"
-for %%i in ("%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%") do (if "%%~zi"=="0" (echo 网络未连接或连接到服务器失败，请稍后再试. & echo 请按任意键返回 & pause>nul & del /f /q "%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" & goto onCreate))
-start "" SCHelper.exe "%temp%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" "%scid%"
+curl.dll http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename%>"%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%"
+for %%i in ("%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%") do (if "%%~zi"=="0" (echo 网络未连接或连接到服务器失败，请稍后再试. & echo 请按任意键返回 & pause>nul & del /f /q "%appdata%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" & goto onCreate))
+start "" SCHelper.exe "%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" "%scid%"
 del /f /q "serverlist.cmd"
 pause
 exit
