@@ -10,7 +10,7 @@ goto 1
 :1
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.5.1 [Code:20]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 当前拥有的场景(第1页/共1页):
@@ -77,13 +77,17 @@ goto onReadInfo
 :onReadInfo
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.5.1 [Code:20]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 场景名：%scname%
+echo.
 echo 场景说明：%scinfo%
+echo.
 echo 场景大小：%scdata%
+echo.
 echo 作者：%scmaker%
+echo.
 set /p downloadconfirm=输入1开始下载，输入2打开原帖链接，输入0返回主菜单(按回车ENTER确认):
 if /i "%downloadconfirm%"=="1" (goto onDownload)
 if /i "%downloadconfirm%"=="0" (goto %page%)
@@ -93,7 +97,7 @@ goto onReadInfo
 :onDownload
 cls
 title 瘟疫公司场景助手 - 小喵工作室 - MeowCat Studio
-echo                     Plague Inc. Evolved Scenario Helper v1.0.4.3 [Code:19]
+echo                     Plague Inc. Evolved Scenario Helper v1.0.5.1 [Code:20]
 echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
 echo ----------------------------------------------------------------------------------------------------
 echo 正在连接服务器...请稍后...
