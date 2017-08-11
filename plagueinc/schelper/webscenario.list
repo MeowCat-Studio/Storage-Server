@@ -103,11 +103,11 @@ echo ---------------------------------------------------------------------------
 echo 正在连接服务器...请稍后...
 curl.dll http://cdn.meowcat.tk/plagueinc/schelper/scenario/%scfilename%>"%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%"
 for %%i in ("%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%") do (if "%%~zi"=="0" (echo 网络未连接或连接到服务器失败，请稍后再试. & echo 请按任意键返回 & pause>nul & del /f /q "%appdata%\MeowCatStudio\ScenarioHelper\temp\weblist\%scfilename%" & goto onCreate))
-start "" SCHelper.exe "%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" "%scid%"
+start "" PlagueIncSCHelper.exe "%appdata%\MeowCat Studio\Scenario Helper\temp\weblist\%scfilename%" "%scid%"
 del /f /q "serverlist.cmd"
 pause
 exit
 :onEnd
-start "" "SCHelper.exe"
+start "" "PlagueIncSCHelper.exe"
 del /f /q "serverlist.cmd"
 exit
