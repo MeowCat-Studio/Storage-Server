@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Download - MeowCat Studio</title>
+</head>
+<body>
+<script>
+function GetQueryString(name) {
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if(r!=null)return  unescape(r[2]); return null;
+}
+var path=GetQueryString("p");
+var link=GetQueryString("s");
+if(path !=null && path.toString().length>=1) {
+if(link !=null && link.toString().length>=1) {
+	location.href='https://pan.baidu.com/s/"+link+"#list/path=' + path
+} else {
+location.href='https://pan.baidu.com/s/1eSE6yuY#list/path=' + path
+} else {
+	location.href='https://pan.baidu.com/s/1eSE6yuY'
+}
+</script>
+</body>
+</html>
