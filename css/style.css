@@ -1,0 +1,193 @@
+.load-position .logo {
+	margin: 0 auto;
+}
+
+.load-complete {
+	position: fixed;
+	overflow: hidden;
+	background: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999999;
+}
+
+.load-complete .logo {
+	color: #000000;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.load-complete .load-position h6 {
+	text-align: center;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.load-complete .load-position {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 999;
+	right: 0;
+	margin-top: -100px;
+}
+
+.load-complete .loading {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	margin: 20px auto;
+	left: 0;
+	right: 0;
+}
+
+.load-complete .loading-line {
+	position: absolute;
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+	height: 2px;
+}
+
+.load-complete .loading-break {
+	position: absolute;
+	background: #333;
+	width: 48px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.load-complete .loading-dot-1 {
+	-webkit-animation: loading 2s infinite;
+	-moz-animation: loading 2s infinite;
+	-ms-animation: loading 2s infinite;
+	-o-animation: loading 2s infinite;
+	animation: loading 2s infinite;
+}
+
+.load-complete .loading-dot-2 {
+	-webkit-animation: loading 2s 0.5s infinite;
+	-moz-animation: loading 2s 0.5s infinite;
+	-ms-animation: loading 2s 0.5s infinite;
+	-o-animation: loading 2s 0.5s infinite;
+	animation: loading 2s 0.5s infinite;
+}
+
+.load-complete .loading-dot-3 {
+	-webkit-animation: loading 2s 1s infinite;
+	-moz-animation: loading 2s 1s infinite;
+	-ms-animation: loading 2s 1s infinite;
+	-o-animation: loading 2s 1s infinite;
+	animation: loading 2s 1s infinite;
+}
+
+@keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-moz-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-ms-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@-o-keyframes loading {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+.box {
+	margin: auto;
+	width: 512px;
+	height: 256px;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.box h2 {
+	font-size: 40px;
+	color: #FFF;
+}
+
+.box p {
+	color: #d1d1d1;
+}
+
+::selection {
+	background: rgba(255,134,184,0.8);
+	color: #FFF;
+}
+
+::-moz-selection {
+	background: rgba(255,134,184,0.8);
+	color: #FFF;
+}
+
+::-webkit-selection {
+	background: rgba(255,134,184,0.8);
+	color: #FFF;
+}
+
+@media screen and (max-width: 640px) {
+	.box h2 {
+		font-size: 26px;
+	}
+	
+	.box {
+		width: 100%;
+		height: 128px;
+	}
+}
+
+.iframe {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	border: 0px;
+}
