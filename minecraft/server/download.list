@@ -1,0 +1,214 @@
+rem ==========================================
+rem MeowCat Minecraft Server Helper
+rem @author MeowCat Studio MlgmXyysd
+rem @time 2018/2/14
+rem @lastupdate 2018/3/2
+rem Copyright (C) 2014-2018 MeowCat Studio
+rem Powered by MlgmXyysd All Rights Reserved.
+rem ==========================================
+@Echo off
+color F3
+mode con cols=100
+goto onCreate
+:onCreate
+set pname=%2
+set pfolder=%~dp2
+md %~dp2\download
+cls
+set title=Minecraft Server Helper - MeowCat Studio
+goto onLanguage
+:onLanguage
+if "%1"=="en_US" (
+	goto enUS
+) else (
+	goto zhCN
+)
+:enUS
+set lang=enUS
+set text1=Please select resource (Page
+set text2=Input 0 return to main menu, Input page+pagecode to change the page.
+set text3=Please type number and press ENTER:
+set text4=Name
+set text5=Infomation
+set text6=Size
+set text7=Author
+set text8=Input 1 to start download,Input 2 to open resource website,Input 0 return to list.
+set text9=Downloading...
+set text10=Download Falied.
+set text11=Press any key return to infomation page.
+set text12=Download Complete,File is saved in "download" folder.Please check file integrity.
+set text13=Input 0 return to main menu,Input 1 return to list.
+goto onCreate
+:zhCN
+set lang=zhCN
+set text1=请选择资源下载(页
+set text2=键入0返回主菜单，输入page+页码可以切换页面。
+set text3=请键入序号并按回车键(ENTER)确认:
+set text4=名称
+set text5=介绍
+set text6=大小
+set text7=作者
+set text8=输入1开始下载，输入2打开资源链接，输入0返回列表:
+set text9=正在下载...
+set text10=下载失败.
+set text11=按任意键返回介绍页.
+set text12=下载完成。文件已保存在download目录下，请手动检测文件完整性.
+set text13=输入0返回主菜单，输入1返回列表:
+:1
+cls
+title %title%
+echo                       MeowCat Minecraft Server Helper v1.0.0.4 [Code:5]
+echo         Copyright (C) 2014-2018 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
+echo ----------------------------------------------------------------------------------------------------
+echo %text1% 1/1):
+echo [1] [Java Runtime Environment 1.6.0 32-bit]
+echo [2] [Java Runtime Environment 1.6.0 64-bit]
+echo [3] [Java Runtime Environment 1.7.0 32-bit]
+echo [4] [Java Runtime Environment 1.7.0 64-bit]
+echo [5] [Java Runtime Environment 1.8.0 32-bit]
+echo [6] [Java Runtime Environment 1.9.0 64-bit]
+rem echo [7] [Test]
+rem echo [8] [Test]
+rem echo [9] [Test]
+rem echo [10] [Test]
+echo %text2%
+set /p select=%text3%
+echo.
+if /i "%select%"=="0" (goto onEnd)
+if /i "%select%"=="1" (goto 11)
+if /i "%select%"=="2" (goto 12)
+if /i "%select%"=="3" (goto 13)
+rem if /i "%select%"=="4" (goto 14)
+rem if /i "%select%"=="5" (goto 15)
+rem if /i "%select%"=="6" (goto 16)
+rem if /i "%select%"=="7" (goto 17)
+rem if /i "%select%"=="8" (goto 18)
+rem if /i "%select%"=="9" (goto 19)
+rem if /i "%select%"=="10" (goto 110)
+if /i "%select%"=="page1" (goto 1)
+set select=
+goto 1
+:11
+set page=1
+set name=Java Runtime Environment 1.6.0 32-bit
+set infozhCN=Java Runtime Environment 1.6.0 for 32-bit system.
+set infoenUS=32位系统使用的Java Runtime Environment，版本1.6.0
+set data=16.30MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre6x86.exe
+set filename=Jre6x86.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:12
+set page=1
+set name=Java Runtime Environment 1.6.0 64-bit
+set infozhCN=Java Runtime Environment 1.6.0 for 64-bit system.
+set infoenUS=64位系统使用的Java Runtime Environment，版本1.6.0
+set data=16.55MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre6x64.exe
+set filename=Jre6x64.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:13
+set page=1
+set name=Java Runtime Environment 1.7.0 32-bit
+set infozhCN=Java Runtime Environment 1.7.0 for 32-bit system.
+set infoenUS=32位系统使用的Java Runtime Environment，版本1.7.0
+set data=28.14MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre7x86.exe
+set filename=Jre7x86.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:14
+set page=1
+set name=Java Runtime Environment 1.7.0 64-bit
+set infozhCN=Java Runtime Environment 1.7.0 for 64-bit system.
+set infoenUS=64位系统使用的Java Runtime Environment，版本1.7.0
+set data=29.79MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre7x64.exe
+set filename=Jre7x64.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:15
+set page=1
+set name=Java Runtime Environment 1.7.0 32-bit
+set infozhCN=Java Runtime Environment 1.7.0 for 32-bit system.
+set infoenUS=32位系统使用的Java Runtime Environment，版本1.8.0
+set data=61.35MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre8x86.exe
+set filename=Jre8x86.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:16
+set page=1
+set name=Java Runtime Environment 1.7.0 32-bit
+set infozhCN=Java Runtime Environment 1.7.0 for 32-bit system.
+set infoenUS=64位系统使用的Java Runtime Environment，版本1.8.0
+set data=68.02MB
+set maker=Oracle
+set filelink=http://signer.mlgmxyysd.firadio.net/download/Jre8x64.exe
+set filename=Jre8x64.exe
+set type=exe
+set link=http://www.java.com/
+goto onReadInfo
+:onReadInfo
+set info=info%lang%
+cls
+title %title%
+echo                       MeowCat Minecraft Server Helper v1.0.0.4 [Code:5]
+echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
+echo ----------------------------------------------------------------------------------------------------
+echo %text4%: %name%
+echo.
+echo %text5%: %info%
+echo.
+echo %text6%: %data%
+echo.
+echo %text7%: %maker%
+echo.
+echo %text8%
+echo.
+set /p downloadconfirm=%text3%
+if /i "%downloadconfirm%"=="1" (goto onDownload)
+if /i "%downloadconfirm%"=="0" (goto %page%)
+if /i "%downloadconfirm%"=="2" (start %link%)
+set downloadconfirm=
+goto onReadInfo
+:onDownload
+cls
+title %title%
+echo                       MeowCat Minecraft Server Helper v1.0.0.4 [Code:5]
+echo          Copyright ? 2014-2016 MeowCat Studio Powered by MlgmXyysd All Rights Reserved.
+echo ----------------------------------------------------------------------------------------------------
+echo %text9%
+%~dp2\lib\curl.dll %filelink%>"%~dp2\download\%filename%"
+for %%i in ("%~dp2\download\%filename%") do (
+	if "%%~zi"=="0" (
+		echo %text10%
+		echo %text11%
+		pause>nul
+		del /f /q "%~dp2\download\%filename%"
+	goto onReadInfo
+	)
+)
+echo %text12%
+set /p complete=%text13%
+if /i "%complete%"=="0" (
+	start "" %2
+	del /f /q %0
+	exit
+)
+if /i "%complete%"=="1" (goto %page%)
+:onEnd
+start "" %2
+del /f /q %0
+exit
