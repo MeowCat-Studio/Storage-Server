@@ -1,0 +1,234 @@
+--------- beginning of system
+05-30 21:41:37.932  9849  9849 D ActivityThread: ActivityThread,attachApplication
+--------- beginning of main
+05-30 21:41:38.249  9849  9849 D HwCust  : Create obj success use class android.content.res.HwCustHwResourcesImpl
+05-30 21:41:38.386  9849  9849 I System.out: Update settings xposed
+05-30 21:41:38.645  9849  9849 V HwPolicyFactory: : success to get AllImpl object and return....
+05-30 21:41:38.669  9849  9849 V HwWidgetFactory: : successes to get AllImpl object and return....
+05-30 21:41:38.714  9849  9849 V ActivityThread: ActivityThread,callActivityOnCreate
+05-30 21:41:38.891  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.892  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:38.892  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.892  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:38.892  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.892  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:38.893  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.893  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:38.898  9849  9849 I AppCompatViewInflater: app:theme is now deprecated. Please move to using android:theme instead.
+05-30 21:41:38.954  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.955  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:38.955  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:38.955  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:39.095  9849  9849 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-30 21:41:39.372  9849  9946 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: false
+05-30 21:41:39.384  9849  9849 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:41:39.462  9849  9946 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:41:39.463  9849  9946 I OpenGLRenderer: Initialized EGL, version 1.4
+05-30 21:41:39.464  9849  9946 E linker  : readlink('/proc/self/fd/36') failed: Permission denied [fd=36]
+05-30 21:41:39.464  9849  9946 E linker  : warning: unable to get realpath for the library "libhwaps.so". Will use given name.
+05-30 21:41:39.470  9849  9946 W OpenGLRenderer: load: so=/system/lib64/libhwuibp.so
+05-30 21:41:39.470  9849  9946 W OpenGLRenderer: dlopen failed: library "/system/lib64/libhwuibp.so" not found
+05-30 21:41:39.470  9849  9946 W OpenGLRenderer: Initialize Binary Program Cache: Load Failed
+05-30 21:41:39.471  9849  9946 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:41:40.911  9849  9849 V AudioManager: playSoundEffect   effectType: 0
+05-30 21:41:40.911  9849  9849 V AudioManager: querySoundEffectsEnabled...
+05-30 21:41:41.385  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:41.386  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:41.386  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:41:41.386  9849  9849 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:41:42.003  9849  9849 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+05-30 21:41:42.018  9849  9849 D ThreadPoolService: onCreate()
+05-30 21:41:42.026  9849  9849 I HwCust  : Constructor found for class android.app.HwCustNotificationImpl
+05-30 21:41:42.026  9849  9849 D HwCust  : Create obj success use class android.app.HwCustNotificationImpl
+05-30 21:41:42.098  9849  9849 D ThreadPoolService: onBind(intent=Intent { cmp=com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherService })
+05-30 21:41:42.099  9849  9849 D ThreadPoolService: onStartCommand(intent=Intent { cmp=com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherService }, flags=0, startId=1)
+05-30 21:41:42.765  9849  9849 D ThreadPoolService: Added runnable com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask@988e98e to thread pool: default
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: Could not connect to mbtool socket
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: java.io.IOException: Connection refused
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at android.net.LocalSocketImpl.connectLocal(Native Method)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at android.net.LocalSocketImpl.connect(LocalSocketImpl.java:299)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at android.net.LocalSocket.connect(LocalSocket.java:130)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:159)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.access$initConnectToSocket(MbtoolConnection.kt:108)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection.connect(MbtoolConnection.kt:61)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection.<init>(MbtoolConnection.kt:83)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask.execute(GetRomsStateTask.kt:55)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.BaseServiceTask.run(BaseServiceTask.kt:111)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.ThreadPoolService$enqueueOperation$$inlined$synchronized$lambda$1.run(ThreadPoolService.kt:150)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+05-30 21:41:42.782  9849 10030 E MbtoolConnection: 	at java.lang.Thread.run(Thread.java:833)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: mbtool error
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: com.github.chenxiaolong.dualbootpatcher.socket.exceptions.MbtoolException: java.io.IOException: Connection refused
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:163)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.access$initConnectToSocket(MbtoolConnection.kt:108)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection.connect(MbtoolConnection.kt:61)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection.<init>(MbtoolConnection.kt:83)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask.execute(GetRomsStateTask.kt:55)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.BaseServiceTask.run(BaseServiceTask.kt:111)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.ThreadPoolService$enqueueOperation$$inlined$synchronized$lambda$1.run(ThreadPoolService.kt:150)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at java.lang.Thread.run(Thread.java:833)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: Caused by: java.io.IOException: Connection refused
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at android.net.LocalSocketImpl.connectLocal(Native Method)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at android.net.LocalSocketImpl.connect(LocalSocketImpl.java:299)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at android.net.LocalSocket.connect(LocalSocket.java:130)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:159)
+05-30 21:41:42.786  9849 10030 E GetRomsStateTask: 	... 9 more
+05-30 21:41:42.787  9849 10030 D ThreadPoolService: Attempting to stop service
+05-30 21:41:42.788  9849 10030 D ThreadPoolService: Not stopping: # of operations: 0, is bound: true
+05-30 21:41:43.280  9849  9849 V ActivityThread: ActivityThread,callActivityOnCreate
+05-30 21:41:43.330  9849  9849 D ThreadPoolService: Added runnable com.github.chenxiaolong.dualbootpatcher.switcher.service.UpdateMbtoolWithRootTask@f4dbe84 to thread pool: default
+05-30 21:41:43.330  9849  9849 D ThreadPoolService: onStartCommand(intent=Intent { cmp=com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherService }, flags=0, startId=2)
+05-30 21:41:43.360  9849  9849 D HwSensorManager: HwSensorManager version: 1.0.0
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: Could not connect to mbtool socket
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: java.io.IOException: Connection refused
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at android.net.LocalSocketImpl.connectLocal(Native Method)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at android.net.LocalSocketImpl.connect(LocalSocketImpl.java:299)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at android.net.LocalSocket.connect(LocalSocket.java:130)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:159)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.replaceViaSignedExec(MbtoolConnection.kt:336)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.UpdateMbtoolWithRootTask.execute(UpdateMbtoolWithRootTask.kt:40)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.BaseServiceTask.run(BaseServiceTask.kt:111)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.ThreadPoolService$enqueueOperation$$inlined$synchronized$lambda$1.run(ThreadPoolService.kt:150)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+05-30 21:41:43.370  9849 10051 E MbtoolConnection: 	at java.lang.Thread.run(Thread.java:833)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: mbtool error
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: com.github.chenxiaolong.dualbootpatcher.socket.exceptions.MbtoolException: java.io.IOException: Connection refused
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:163)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.replaceViaSignedExec(MbtoolConnection.kt:336)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.UpdateMbtoolWithRootTask.execute(UpdateMbtoolWithRootTask.kt:40)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.BaseServiceTask.run(BaseServiceTask.kt:111)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.ThreadPoolService$enqueueOperation$$inlined$synchronized$lambda$1.run(ThreadPoolService.kt:150)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at java.lang.Thread.run(Thread.java:833)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: Caused by: java.io.IOException: Connection refused
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at android.net.LocalSocketImpl.connectLocal(Native Method)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at android.net.LocalSocketImpl.connect(LocalSocketImpl.java:299)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at android.net.LocalSocket.connect(LocalSocket.java:130)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	at com.github.chenxiaolong.dualbootpatcher.socket.MbtoolConnection$Companion.initConnectToSocket(MbtoolConnection.kt:159)
+05-30 21:41:43.370  9849 10051 W MbtoolConnection: 	... 7 more
+05-30 21:41:43.370  9849 10051 W UpdateMbtoolWithRootTask: Failed to update mbtool with SignedExec method
+05-30 21:41:43.374  9849 10051 V CommandUtils: Command: 'mountpoint' '/mnt/mb_tmp'
+05-30 21:41:43.376  9849 10051 I System.out: [su]
+05-30 21:41:43.376  9849 10051 I System.out: null
+05-30 21:41:43.376  9849 10051 I System.out: null
+05-30 21:41:43.376  9849 10051 I System.out: Calling by::className:com.c.a.b.b  MethodName:<init>
+05-30 21:41:43.483  9849 10061 D CommandUtils: Root command output: mountpoint: /mnt/mb_tmp: No such file or directory
+05-30 21:41:43.486  9849 10051 V CommandUtils: Command: 'mkdir' '-p' '/mnt/mb_tmp'
+05-30 21:41:43.502  9849 10051 V CommandUtils: Command: 'mount' '-t' 'tmpfs' 'tmpfs' '/mnt/mb_tmp'
+05-30 21:41:43.521  9849 10051 V CommandUtils: Command: 'mv' '/mnt/mb_tmp/mbtool' '/mnt/mb_tmp/mbtool.bak'
+05-30 21:41:43.536  9849 10061 D CommandUtils: Root command output: mv: bad '/mnt/mb_tmp/mbtool': No such file or directory
+05-30 21:41:43.538  9849 10051 V CommandUtils: Command: 'cp' '/data/user/0/com.github.chenxiaolong.dualbootpatcher.snapshot/files/data-9.3.0.r507.g54c2ac4c/binaries/android/arm64-v8a/mbtool' '/mnt/mb_tmp/mbtool'
+05-30 21:41:43.585  9849 10051 V CommandUtils: Command: 'chmod' '755' '/mnt/mb_tmp/mbtool'
+05-30 21:41:43.597  9849 10051 V CommandUtils: Command: '/mnt/mb_tmp/mbtool' 'daemon' '--replace' '--daemonize'
+05-30 21:41:43.714  9849 10061 D CommandUtils: Root command output: [2018-05-30T21:41:43.712897000+08:00][10083:10083][D] mbtool/sepolpatch: Policy version: 30
+05-30 21:41:44.378  9849 10061 D CommandUtils: Root command output: [2018-05-30T21:41:44.375421000+08:00][10083:10083][I] mbtool/multiboot: Current process context: u:r:su:s0
+05-30 21:41:44.378  9849 10061 D CommandUtils: Root command output: [2018-05-30T21:41:44.375686000+08:00][10083:10083][V] mbtool/multiboot: Setting process context: u:r:mb_exec:s0
+05-30 21:41:44.913  9849 10061 D CommandUtils: Root command output: (Android M policy compatibility mode)
+05-30 21:41:44.913  9849 10061 D CommandUtils: Root command output: Waiting for daemon to start... OK
+05-30 21:41:44.913  9849 10051 V UpdateMbtoolWithRootTask: Successfully updated mbtool with root method
+05-30 21:41:44.913  9849 10051 D UpdateMbtoolWithRootTask: Attempting mbtool connection after update
+05-30 21:41:44.973  9849 10051 V MbtoolConnection: mbtool version: 9.3.0.r507.g54c2ac4c
+05-30 21:41:44.973  9849 10051 V MbtoolConnection: minimum version: 9.1.0.r54
+05-30 21:41:44.975  9849 10051 D UpdateMbtoolWithRootTask: mbtool was updated to 9.3.0.r507.g54c2ac4c
+05-30 21:41:44.976  9849 10051 D ThreadPoolService: Attempting to stop service
+05-30 21:41:44.976  9849 10051 D ThreadPoolService: Not stopping: # of operations: 0, is bound: true
+05-30 21:41:45.013  9849  9849 D ThreadPoolService: Added runnable com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask@9a8824c to thread pool: default
+05-30 21:41:45.039  9849 10030 V MbtoolConnection: mbtool version: 9.3.0.r507.g54c2ac4c
+05-30 21:41:45.039  9849 10030 V MbtoolConnection: minimum version: 9.1.0.r54
+05-30 21:41:45.088  9849 10030 D RomUtils: mbtool says current ROM ID is: primary
+05-30 21:41:45.144  9849 10030 E linker  : readlink('/proc/self/fd/48') failed: Permission denied [fd=48]
+05-30 21:41:45.145  9849 10030 E linker  : warning: unable to get realpath for the library "/data/app/com.github.chenxiaolong.dualbootpatcher.snapshot-2/lib/arm64/libjnidispatch.so". Will use given name.
+05-30 21:41:45.223  9849 10030 E linker  : readlink('/proc/self/fd/40') failed: Permission denied [fd=40]
+05-30 21:41:45.223  9849 10030 E linker  : warning: unable to get realpath for the library "libmbdevice.so". Will use given name.
+05-30 21:41:45.234  9849 10030 E linker  : readlink('/proc/self/fd/40') failed: Permission denied [fd=40]
+05-30 21:41:45.234  9849 10030 E linker  : warning: unable to get realpath for the library "libmbcommon.so". Will use given name.
+05-30 21:41:45.239  9849 10030 E linker  : readlink('/proc/self/fd/40') failed: Permission denied [fd=40]
+05-30 21:41:45.239  9849 10030 E linker  : warning: unable to get realpath for the library "libc++_shared.so". Will use given name.
+05-30 21:41:45.421  9849 10030 D ThreadPoolService: Attempting to stop service
+05-30 21:41:45.421  9849 10030 D ThreadPoolService: Not stopping: # of operations: 0, is bound: true
+05-30 21:41:45.485  9849 10030 E MainApplication: Thread[pool-1-thread-1,5,main] has crashed with an uncaught exception; dumping log
+05-30 21:41:45.491  9849 10030 V LogUtils: Dumping logcat: [logcat, -d, -f, /storage/emulated/0/MultiBoot/logs/crash.log, -v, threadtime, *:V]
+05-30 21:41:45.491  9849 10030 I System.out: [logcat, -d, -f, /storage/emulated/0/MultiBoot/logs/crash.log, -v, threadtime, *:V]
+05-30 21:41:45.491  9849 10030 I System.out: null
+05-30 21:41:45.491  9849 10030 I System.out: null
+05-30 21:41:45.491  9849 10030 I System.out: Calling by::className:com.github.chenxiaolong.dualbootpatcher.LogUtils  MethodName:dump
+--------- beginning of crash
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: FATAL EXCEPTION: pool-1-thread-1
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: Process: com.github.chenxiaolong.dualbootpatcher.snapshot, PID: 9849
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: a.c
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherUtils.getBootPartition(SwitcherUtils.kt:78)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherUtils.copyBootPartition(SwitcherUtils.kt:248)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask.execute(GetRomsStateTask.kt:64)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at com.github.chenxiaolong.dualbootpatcher.switcher.service.BaseServiceTask.run(BaseServiceTask.kt:111)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at com.github.chenxiaolong.dualbootpatcher.ThreadPoolService$enqueueOperation$$inlined$synchronized$lambda$1.run(ThreadPoolService.kt:150)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+05-30 21:41:46.129  9849 10030 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:833)
+05-30 21:41:46.555  9849 10030 I Process : Sending signal. PID: 9849 SIG: 9
+05-30 21:41:47.651 10131 10131 D ActivityThread: ActivityThread,attachApplication
+05-30 21:41:47.823 10131 10131 D HwCust  : Create obj success use class android.content.res.HwCustHwResourcesImpl
+05-30 21:41:47.876 10131 10131 I System.out: Update settings xposed
+05-30 21:41:47.940 10131 10131 D ThreadPoolService: onCreate()
+05-30 21:41:47.948 10131 10131 I HwCust  : Constructor found for class android.app.HwCustNotificationImpl
+05-30 21:41:47.948 10131 10131 D HwCust  : Create obj success use class android.app.HwCustNotificationImpl
+05-30 21:41:47.956 10131 10131 D ThreadPoolService: onStartCommand(intent=null, flags=0, startId=3)
+05-30 21:42:35.600 10131 10131 V HwPolicyFactory: : success to get AllImpl object and return....
+05-30 21:42:35.604 10131 10131 V HwWidgetFactory: : successes to get AllImpl object and return....
+05-30 21:42:35.609 10131 10131 V ActivityThread: ActivityThread,callActivityOnCreate
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.665 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.666 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.666 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.668 10131 10131 I AppCompatViewInflater: app:theme is now deprecated. Please move to using android:theme instead.
+05-30 21:42:35.690 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.690 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.690 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:35.690 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:35.745 10131 10131 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-30 21:42:35.855 10131 10458 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: false
+05-30 21:42:35.860 10131 10131 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:42:35.938 10131 10458 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:42:35.938 10131 10458 I OpenGLRenderer: Initialized EGL, version 1.4
+05-30 21:42:35.940 10131 10458 E linker  : readlink('/proc/self/fd/36') failed: Permission denied [fd=36]
+05-30 21:42:35.940 10131 10458 E linker  : warning: unable to get realpath for the library "libhwaps.so". Will use given name.
+05-30 21:42:35.944 10131 10458 W OpenGLRenderer: load: so=/system/lib64/libhwuibp.so
+05-30 21:42:35.944 10131 10458 W OpenGLRenderer: dlopen failed: library "/system/lib64/libhwuibp.so" not found
+05-30 21:42:35.944 10131 10458 W OpenGLRenderer: Initialize Binary Program Cache: Load Failed
+05-30 21:42:35.944 10131 10458 E HAL     : load: id=gralloc != hmi->id=gralloc
+05-30 21:42:37.269 10131 10131 V AudioManager: playSoundEffect   effectType: 0
+05-30 21:42:37.269 10131 10131 V AudioManager: querySoundEffectsEnabled...
+05-30 21:42:37.742 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:37.742 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:37.742 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.15, mControlPoint1y = 0.7, mControlPoint2x = 0.2, mControlPoint2y = 0.98
+05-30 21:42:37.743 10131 10131 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+05-30 21:42:37.789 10131 10131 D ThreadPoolService: onBind(intent=Intent { cmp=com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherService })
+05-30 21:42:37.790 10131 10131 D ThreadPoolService: onStartCommand(intent=Intent { cmp=com.github.chenxiaolong.dualbootpatcher.snapshot/com.github.chenxiaolong.dualbootpatcher.switcher.SwitcherService }, flags=0, startId=4)
+05-30 21:42:37.850 10131 10131 D ThreadPoolService: Added runnable com.github.chenxiaolong.dualbootpatcher.switcher.service.GetRomsStateTask@848e5af to thread pool: default
+05-30 21:42:37.902 10131 10480 V MbtoolConnection: mbtool version: 9.3.0.r507.g54c2ac4c
+05-30 21:42:37.902 10131 10480 V MbtoolConnection: minimum version: 9.1.0.r54
+05-30 21:42:37.949 10131 10480 D RomUtils: mbtool says current ROM ID is: primary
+05-30 21:42:37.976 10131 10480 E linker  : readlink('/proc/self/fd/50') failed: Permission denied [fd=50]
+05-30 21:42:37.976 10131 10480 E linker  : warning: unable to get realpath for the library "/data/app/com.github.chenxiaolong.dualbootpatcher.snapshot-2/lib/arm64/libjnidispatch.so". Will use given name.
+05-30 21:42:37.989 10131 10480 E linker  : readlink('/proc/self/fd/47') failed: Permission denied [fd=47]
+05-30 21:42:37.989 10131 10480 E linker  : warning: unable to get realpath for the library "libmbdevice.so". Will use given name.
+05-30 21:42:37.989 10131 10480 E linker  : readlink('/proc/self/fd/47') failed: Permission denied [fd=47]
+05-30 21:42:37.989 10131 10480 E linker  : warning: unable to get realpath for the library "libmbcommon.so". Will use given name.
+05-30 21:42:37.991 10131 10480 E linker  : readlink('/proc/self/fd/47') failed: Permission denied [fd=47]
+05-30 21:42:37.991 10131 10480 E linker  : warning: unable to get realpath for the library "libc++_shared.so". Will use given name.
+05-30 21:42:38.148 10131 10480 D ThreadPoolService: Attempting to stop service
+05-30 21:42:38.148 10131 10480 D ThreadPoolService: Not stopping: # of operations: 0, is bound: true
+05-30 21:42:38.161 10131 10480 E MainApplication: Thread[pool-1-thread-1,5,main] has crashed with an uncaught exception; dumping log
+05-30 21:42:38.166 10131 10480 V LogUtils: Dumping logcat: [logcat, -d, -f, /storage/emulated/0/MultiBoot/logs/crash.log, -v, threadtime, *:V]
+05-30 21:42:38.166 10131 10480 I System.out: [logcat, -d, -f, /storage/emulated/0/MultiBoot/logs/crash.log, -v, threadtime, *:V]
+05-30 21:42:38.166 10131 10480 I System.out: null
+05-30 21:42:38.166 10131 10480 I System.out: null
+05-30 21:42:38.166 10131 10480 I System.out: Calling by::className:com.github.chenxiaolong.dualbootpatcher.LogUtils  MethodName:dump
