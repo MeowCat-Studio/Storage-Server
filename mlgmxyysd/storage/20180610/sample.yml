@@ -1,0 +1,164 @@
+# 这是一个完整的DualBootPatcher设备配置文件
+
+# 添加设备配置的注意事项：
+# - 标*为必填字段
+# - 标^为选填字段
+# - 标#为注释
+# - 将此文件内容复制到对应品牌的设备配置文件中
+# - 将字段设置为对应设备的值
+# - 删除不必要的字段
+# - 删除不必要的注释/空格
+
+# 可读设备名称*
+- name: Samsung Galaxy S 4 (Qcom)
+  # 设备ID*
+  # 注意：必须是唯一的，不能和其他配置文件重复，可以用任何字符串代替
+  # 最好和设备的机型类似(如果可能的话)
+  id: jflte
+
+  # 设备机型列表*
+  # 可以在设备build.prop中的'ro.product.device'和'ro.build.product'找到
+  # 注意: 列表中的机型必须拥有相同的分区表，否则可能会损害设备。
+  codenames:
+    - jflte
+    - jfltetmo
+    - jfltexx
+
+  # 设备架构*
+  # 可以在设备build.prop中的'ro.product.cpu.abi'找到
+  # 一般为armeabi，armeabi-v7a, arm64-v8a或x86.
+  architecture: armeabi-v7a
+
+  # 设备分区块列表*
+  block_devs:
+    # 基础目录列表^
+    # 基础目录是包含分区块设备的/dev/目录中的'by-name'目录。
+    base_dirs:
+      - /dev/block/platform/msm_sdcc.1/by-name
+
+    # 设备系统分区块路径*
+    system:
+      - /dev/block/platform/msm_sdcc.1/by-name/system
+      - /dev/block/mmcblk0p16
+
+    # 设备缓存分区块路径*
+    cache:
+      - /dev/block/platform/msm_sdcc.1/by-name/cache
+      - /dev/block/mmcblk0p18
+
+    # 设备数据分区块路径*
+    data:
+      - /dev/block/platform/msm_sdcc.1/by-name/userdata
+      - /dev/block/mmcblk0p29
+
+    # 设备引导(Boot)分区块路径*
+    boot:
+      - /dev/block/platform/msm_sdcc.1/by-name/boot
+      - /dev/block/mmcblk0p20
+
+    # 设备恢复(Recovery)分区块路径*
+    recovery:
+      - /dev/block/platform/msm_sdcc.1/by-name/recovery
+      - /dev/block/mmcblk0p21
+
+    # 设备附加分区块路径^
+    # 这是在刷入过程中可用的分区块列表
+    # 这里没有列出的任何设备分区块将不能被ROM安装程序所修改
+    extra:
+      - /dev/block/platform/msm_sdcc.1/by-name/aboot
+
+  # 引导界面选项^
+  # 如果你的设备没有被TWRP适配就不用看了
+  boot_ui:
+    # 是否支持引导界面^
+    supported: true
+
+    # TWRP标记列表^
+    # 这些标志对应于具有相同名称的TWRP标志。
+    #
+    # 可选标记:
+    # - TW_TOUCHSCREEN_SWAP_XY
+    # - TW_TOUCHSCREEN_FLIP_X
+    # - TW_TOUCHSCREEN_FLIP_Y
+    # - TW_GRAPHICS_FORCE_USE_LINELENGTH
+    # - TW_SCREEN_BLANK_ON_BOOT
+    # - TW_BOARD_HAS_FLIPPED_SCREEN
+    # - TW_IGNORE_MAJOR_AXIS_0
+    # - TW_IGNORE_MT_POSITION_0
+    # - TW_IGNORE_ABS_MT_TRACKING_ID
+    # - TW_NEW_ION_HEAP
+    # - TW_NO_SCREEN_BLANK
+    # - TW_NO_SCREEN_TIMEOUT
+    # - TW_ROUND_SCREEN
+    # - TW_NO_CPU_TEMP
+    # - TW_QCOM_RTC_FIX
+    # - TW_HAS_DOWNLOAD_MODE
+    # - TW_PREFER_LCD_BACKLIGHT
+    flags:
+      - TW_HAS_DOWNLOAD_MODE
+      - TW_PREFER_LCD_BACKLIGHT
+
+    # TWRP像素格式^
+    #
+    # 可选选项:
+    # - DEFAULT
+    # - ABGR_8888
+    # - RGBX_8888
+    # - BGRA_8888
+    # - RGBA_8888
+    pixel_format: DEFAULT
+
+    # TWRP强制像素格式^
+    #
+    # 可选选项:
+    # - NONE
+    # - RGB_565
+    force_pixel_format: NONE
+
+    # TWRP显示百分比^
+    overscan_percent: 0
+
+    # TWRP默认X轴偏移^
+    default_x_offset: 0
+
+    # TWRP默认Y轴便宜^
+    default_y_offset: 0
+
+    # TWRP系统亮度文件^
+    brightness_path: '/sys/...'
+
+    # TWRP系统第二亮度文件^
+    secondary_brightness_path: '/sys/...'
+
+    # TWRP最大亮度^
+    max_brightness: 255
+
+    # TWRP默认亮度^
+    default_brightness: 128
+
+    # TWRP系统电量文件
+    battery_path: '/sys/...'
+
+    # TWRP系统CPU温度文件^
+    cpu_temp_path: '/sys/...'
+
+    # TWRP输入设备黑名单^
+    input_blacklist: ''
+
+    # TWRP输入设备白名单^
+    input_whitelist: ''
+
+    # TWRP图形后端支持列表^
+    #
+    # 可选选项:
+    # - overlay_msm_old
+    # - drm
+    # - fbdev
+    graphics_backends:
+      - fbdev
+
+    # TWRP主题*
+    #
+    # 可选选项:
+    # - portrait_hdpi
+    theme: portrait_hdpi
