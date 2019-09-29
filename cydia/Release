@@ -1,0 +1,10 @@
+Origin: MeowCat
+Label: MeowCat source
+Suite: stable 
+Version: 1.0
+Codename: MeowCat
+Architectures: iphoneos-arm
+Components: main
+Description: MeowCat source
+MD5Sum:
+ 4acea10c97360993eec91620fd9ff8fc 1189192 crackulous-1.0.0.5.deb
